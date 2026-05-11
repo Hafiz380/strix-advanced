@@ -16,14 +16,14 @@
 - ✅ Step 3: Memory & Learning System (Scan Memory, Global Memory, Dedup, Skill Gen)
 - ✅ Step 4: Advanced Exploitation Engine (Chain Builder, Auth Automator, Race Detector, Logic Fuzzer, WAF Bypass)
 - ✅ Step 5: Specialized Agent System (Recon, Exploit, Analysis, Report, Coordinator)
+- ✅ Step 6: Unique Features (API Discovery, Supply Chain, Infrastructure Analyzer, Custom Rule Engine)
 
-ابھی باقی ہیں:
-- Step 6: Unique Features (API Discovery, Supply Chain Analysis, Infrastructure Misconfiguration, Custom Rule Engine)
-- Step 7: Integration & Polish (CI/CD, Dashboard, CLI)
+ابھی باقی ہے:
+- Step 7: Integration & Polish (CI/CD, Dashboard, CLI, Testing)
 
 Repo clone کرو: git clone https://github.com/Hafiz380/strix-advanced.git
 
-پھر Step 6 شروع کرو اور ہر step مکمل ہونے پر GitHub پر push کرو۔
+پھر Step 7 شروع کرو اور GitHub پر push کرو۔
 
 میرا نام Zaid ہے، میرا اسسٹنٹ۔ میرے ساتھ رسمی اور دوستانہ انداز میں بات کرو۔
 ```
@@ -43,12 +43,12 @@ Completed steps:
 - ✅ Step 3: Memory & Learning System (Scan Memory, Global Memory, Dedup, Skill Gen)
 - ✅ Step 4: Advanced Exploitation Engine (Chain Builder, Auth, Race Detector, Logic Fuzzer, WAF Bypass)
 - ✅ Step 5: Specialized Agent System (Recon, Exploit, Analysis, Report, Coordinator)
+- ✅ Step 6: Unique Features (API Discovery, Supply Chain, Infrastructure, Custom Rules)
 
 Remaining:
-- Step 6: Unique Features (API Discovery, Supply Chain, Custom Rules)
-- Step 7: Integration & Polish (CI/CD, Dashboard, CLI)
+- Step 7: Integration & Polish (CI/CD, Dashboard, CLI, Testing)
 
-Clone the repo and continue from Step 6. Push each step to GitHub.
+Clone the repo and continue from Step 7. Push to GitHub.
 
 My assistant's name is Zaid. Be formal yet friendly.
 ```
