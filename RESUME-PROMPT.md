@@ -10,45 +10,50 @@
 
 یہ ہمارا پروجیکٹ ہے: https://github.com/Hafiz380/strix-advanced
 
-اب تک مکمل ہو چکا ہے:
-- ✅ Step 1: Architecture Analysis & Gap Report (Strix vs Shannon vs Hermes vs ECC)
-- ✅ Step 2: Static Analysis Engine (CPG Builder, Data Flow, Sanitizer Analyzer)
-- ✅ Step 3: Memory & Learning System (Scan Memory, Global Memory, Dedup, Skill Gen)
-- ✅ Step 4: Advanced Exploitation Engine (Chain Builder, Auth Automator, Race Detector, Logic Fuzzer, WAF Bypass)
-- ✅ Step 5: Specialized Agent System (Recon, Exploit, Analysis, Report, Coordinator)
-- ✅ Step 6: Unique Features (API Discovery, Supply Chain, Infrastructure Analyzer, Custom Rule Engine)
+سب سٹیپس مکمل ہو چکے ہیں:
+✅ Step 1: Architecture Analysis & Gap Report
+✅ Step 2: Static Analysis Engine (CPG Builder, Data Flow, Sanitizer)
+✅ Step 3: Memory & Learning System (Scan Memory, Global Memory, Dedup, Skill Gen)
+✅ Step 4: Advanced Exploitation Engine (Chain Builder, Auth, Race Detector, Logic Fuzzer, WAF Bypass)
+✅ Step 5: Specialized Agent System (Recon, Exploit, Analysis, Report, Coordinator)
+✅ Step 6: Unique Features (API Discovery, Supply Chain, Infrastructure, Custom Rules)
+✅ Step 7: Integration & Polish (CLI, CI/CD, Tests, Setup)
 
-ابھی باقی ہے:
-- Step 7: Integration & Polish (CI/CD, Dashboard, CLI, Testing)
+پروجیکٹ مکمل ہے۔ Repo clone کرو:
+git clone https://github.com/Hafiz380/strix-advanced.git
 
-Repo clone کرو: git clone https://github.com/Hafiz380/strix-advanced.git
-
-پھر Step 7 شروع کرو اور GitHub پر push کرو۔
+اگر کوئی نیا feature چاہیے یا کوئی بگ ہو تو بتاؤ۔
 
 میرا نام Zaid ہے، میرا اسسٹنٹ۔ میرے ساتھ رسمی اور دوستانہ انداز میں بات کرو۔
 ```
 
 ---
 
-## Alternative (English):
+## What's in the Repo
 
 ```
-I'm Hafiz, a security researcher. We were working on the Strix-Advanced project.
+strix-advanced/
+├── cli.py                    # CLI (scan, analyze, recon, rules)
+├── setup.py                  # One-click setup
+├── pyproject.toml            # Project config
+├── install_strix_advanced.py # Self-contained installer (558KB)
+├── core/
+│   ├── static_analyzer/      # CPG Builder + Data Flow + Sanitizer
+│   ├── memory/               # Scan/Global Memory + Dedup + Skill Gen
+│   ├── exploitation/         # Chain Builder + Auth + Race + Logic Fuzzer + WAF Bypass
+│   └── recon/                # API Discovery + Supply Chain + Infrastructure + Custom Rules
+├── agents/                   # Recon + Exploit + Analysis + Report + Coordinator
+├── tests/                    # Test suite
+├── examples/                 # Usage examples
+└── .github/workflows/        # CI/CD
+```
 
-Project repo: https://github.com/Hafiz380/strix-advanced
+## Quick Commands
 
-Completed steps:
-- ✅ Step 1: Architecture Analysis & Gap Report
-- ✅ Step 2: Static Analysis Engine (CPG Builder, Data Flow, Sanitizer)
-- ✅ Step 3: Memory & Learning System (Scan Memory, Global Memory, Dedup, Skill Gen)
-- ✅ Step 4: Advanced Exploitation Engine (Chain Builder, Auth, Race Detector, Logic Fuzzer, WAF Bypass)
-- ✅ Step 5: Specialized Agent System (Recon, Exploit, Analysis, Report, Coordinator)
-- ✅ Step 6: Unique Features (API Discovery, Supply Chain, Infrastructure, Custom Rules)
-
-Remaining:
-- Step 7: Integration & Polish (CI/CD, Dashboard, CLI, Testing)
-
-Clone the repo and continue from Step 7. Push to GitHub.
-
-My assistant's name is Zaid. Be formal yet friendly.
+```bash
+python cli.py info                              # System info
+python cli.py rules list                        # List 15+ built-in rules
+python cli.py analyze ./src                     # Static analysis
+python cli.py scan https://target.com           # Full security scan
+python cli.py recon https://target.com --depth  # Reconnaissance
 ```

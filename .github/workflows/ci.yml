@@ -1,0 +1,47 @@
+name: Strix-Advanced CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install ruff
+      - run: ruff check core/ agents/ cli.py
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install tree-sitter tree-sitter-python tree-sitter-javascript pytest pytest-asyncio httpx
+      - run: pytest tests/ -v --tb=short
+
+  security-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install tree-sitter tree-sitter-python
+      - name: Self-scan with custom rules
+        run: |
+          python -c "
+          from core.recon.custom_rules import CustomRuleEngine
+          engine = CustomRuleEngine()
+          matches = engine.scan_directory('core/')
+          print(f'Found {len(matches)} rule matches in self-scan')
+          for m in matches[:10]:
+              print(f'  [{m.severity}] {m.rule.name} at {m.file_path}:{m.line_number}')
+          "
